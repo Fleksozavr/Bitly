@@ -35,7 +35,6 @@ def main():
     parser = argparse.ArgumentParser(description='Сокращаем ссылки на bitly')
     parser.add_argument('link', help='Введите ссылку')
     args = parser.parse_args()
-    print(args.link)
     
     parsed_url = urlparse(args.link)
     combined_path = f"{parsed_url.netloc}{parsed_url.path}"
